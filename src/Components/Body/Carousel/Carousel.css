@@ -1,0 +1,12 @@
+.carousel {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.carousel-control {
+    width: 80%;
+    height: auto;
+    
+}

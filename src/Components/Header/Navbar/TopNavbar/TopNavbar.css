@@ -1,0 +1,23 @@
+.top-nav{
+    height: auto;
+    background-color: #006A4E;
+    color: whitesmoke;
+    padding: 10px;
+}
+.top-nav label{
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+/**** Responsive Section ****/
+
+@media (max-width: 776px) {
+  .right-row{
+    width: 100%;
+  }
+}
+
+
+
+
+  
