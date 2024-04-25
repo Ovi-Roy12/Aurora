@@ -1,0 +1,81 @@
+.footer {
+    width: 100%;
+}
+
+.full-width-container {
+    width: 100%;
+    padding: 100px 100px;
+}
+
+.rounded-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.bottom-part{
+     margin-top: 200px;
+     background-color: #006A4E;
+     color: white;
+
+}
+
+
+.copyright{
+    padding: 100px;
+    margin-top: 50px;
+}
+
+.right-portion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Download App*/
+.app-store{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFDB2C;
+}
+
+.play-store{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1F2F44;
+    color: white;
+}
+  
+.app-store .txt, .play-store .txt {
+    margin-left: 10px;
+}
+
+.txt {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .txt p {
+    margin: 0; 
+  }
+  
+  
+
+
+

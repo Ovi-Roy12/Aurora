@@ -1,5 +1,6 @@
 import React from 'react';
-import './MiddleNavbar.css';
+import '../../Header.css';
+import '../../Responsive.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 

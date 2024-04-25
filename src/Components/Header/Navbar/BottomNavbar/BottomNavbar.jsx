@@ -1,29 +1,26 @@
-import React,{useState} from 'react';
-import './BottomNavbar.css'
+import React from 'react';
+import '../../Header.css';
+import '../../Responsive.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faBars, faTimes, faTable, faCloudArrowDown} from '@fortawesome/free-solid-svg-icons';
-import{Link} from 'react-router-dom'
+import { faCaretDown, faTable} from '@fortawesome/free-solid-svg-icons';
+import{Link} from 'react-router-dom';
 
-const BottomNavbar = () => {
-  const [mobileMenu, setMobileMenu] = useState(false)
 
-  const toggleClick = ()=>{
-    setMobileMenu(!mobileMenu);
-  }
+const BottomNavbar = ({mobileMenu}) => {
 
   return (
     <div>
         <header className='header d-flex'>
 
-        {mobileMenu ? <FontAwesomeIcon icon={faTimes} className='close home-btn' onClick={toggleClick}/>:
-        <FontAwesomeIcon icon={faBars} className='open' onClick={toggleClick}/>}
-
-        <div className=' f_flex'>
+        {/* This is a Dropdown Category Section */}
+        <div className='f_flex'>
           <div className='categories'>
               <div className='dropdown-category'><FontAwesomeIcon icon={faTable}/> Categories <FontAwesomeIcon icon={faCaretDown}/></div>
           </div>
 
-           <ul className={mobileMenu? 'nav-links-mobile':'link f_flex capitalize'}>
+          {/* This is  NavLink Section */}
+
+           <ul className='link f_flex capitalize'>
             <li>
               <Link to='/'>home</Link>
             </li>
@@ -42,12 +39,15 @@ const BottomNavbar = () => {
            </ul>
         </div>  
 
+      </header>  
+
+      
+      {/* User can Download App from here    
         <div className='app'>
             <FontAwesomeIcon icon={faCloudArrowDown} className='downloadIcon'/>
             <Link to='/aurora-app'>Download App</Link>
-        </div>
+        </div> */}
 
-      </header>  
     </div>
   )
 }

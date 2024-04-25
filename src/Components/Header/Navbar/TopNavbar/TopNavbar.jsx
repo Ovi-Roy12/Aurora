@@ -1,5 +1,6 @@
 import React from 'react';
-import './TopNavbar.css';
+import '../../Header.css';
+import '../../Responsive.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faCaretDown} from '@fortawesome/free-solid-svg-icons';
 import { Facebook,Instagram, Language,  } from '@mui/icons-material';
@@ -9,11 +10,13 @@ const TopNavbar = () => {
   return (
     <div className='top-nav'>
       <div className="container d-flex">
-        <div className='left-row'>
+        
+        <div className='left-row f-flex'>
          <label> <FontAwesomeIcon icon={faPhone}/> +88012 3457 7564</label>
          <label> <FontAwesomeIcon icon={faEnvelope}/> Aurora@gmail.com</label>
         </div>
-          <div className='right-row '>
+        
+          <div className='right-row f-flex'>
             <label>Need Helps</label>
             <label>Theme FAQ's</label>
 

@@ -10,7 +10,6 @@
 body{
     background-color: #ffffff;
     font-family: 'Robota Slab', serif;
-    
 }
 
 .container{
@@ -40,10 +39,6 @@ a{
 
 li{
     list-style: none;
-}
-.uppercase{
-    text-transform: uppercase;
-    text-transform: capitalize;
 }
 
 .capitalize{

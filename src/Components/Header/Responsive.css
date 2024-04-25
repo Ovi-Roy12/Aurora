@@ -1,0 +1,131 @@
+/**** Responsive Section ****/
+
+
+/*Top section*/
+@media (max-width: 440px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    .right-row{
+        padding-top: 10px;
+    }
+  }
+
+/*Middle section*/
+@media (max-width: 990px) {
+    .container {
+      display: block;
+    }
+  
+    .logo {
+      text-align: center;
+      padding-top: 12px;
+    }
+  
+    .cart {
+      padding-bottom: 15px;
+      justify-content: center;
+    }
+
+    .cart-icon{
+        margin-right: 10px;
+    }
+
+    .icons{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+  
+  @media (max-width: 430px) {
+    .search button{
+      display: none;
+    }
+    .search input{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  }
+  
+
+
+/*Bottom section*/
+@media (max-width: 990px) {
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header ul li {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    line-height: 70px;
+  }
+
+  .header .link {
+    display: none;
+  }
+
+  .header .active {
+    height: 10vh;
+  }
+
+  .nav-links-mobile{
+    position: absolute;
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: -50px;
+    transition: all 0.5s ease-in-out;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    z-index: 888;
+  }
+  ul{
+    padding-top: 30px;
+  }
+
+   ul li {
+    padding: 20px 10px;
+  }
+
+  ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  .close,
+  .open {
+    color: #ff014f;
+    display: block;
+    font-size: 35px;
+    z-index: 999;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 45%;
+  }
+  .app {
+    padding: 10px;
+  }
+}
+
+
+  /* .app {
+    margin: auto; 
+    padding: 10px; 
+  } */
+
